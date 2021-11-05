@@ -1,0 +1,26 @@
+.quizz {
+    width: 950px;
+    margin: 30px auto;
+    &__title {
+        margin-bottom: 40px;
+        font-family: Russo One;
+        font-size: 40px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__result {
+        width: 70%;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 7px #9e9e9e, 1px 1px 5px #9e9e9e;
+        font-size: 25px;
+        text-align: center;
+    }
+}

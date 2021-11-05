@@ -1,0 +1,19 @@
+.question {
+    width: 75%;
+    padding: 30px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 7px #9e9e9e, 1px 1px 5px #9e9e9e;
+    &__label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    &__choice {
+        font-size: 20px;
+    }
+}
+
+input {
+    margin-bottom: 10px;
+}

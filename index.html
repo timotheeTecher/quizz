@@ -1,17 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz JS</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-
-
-
-    <script src="app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quizz JS</title>
+        <link rel="stylesheet" href="./design/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="quizz">
+            <h1 class="quizz__title">Quizz Culture générale !</h1>
+            <form class="quizz__form" action="" method="post">
+                <div class="question">
+                    <p class="question__label">Qui est l'empereur de France le 2 décembre 1804 ?</p>
+                    <div class="question__choice">
+                        <input type="radio" id="clovis" name="first-question" value="Clovis" checked>
+                        <label for="clovis">Clovis</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="abraham-lincoln" name="first-question" value="Abraham Lincoln">
+                        <label for="abraham-lincoln">Abraham Lincoln</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="napoleon-bonaparte" name="first-question" value="Napoléon Bonaparte">
+                        <label for="napoleon-bonaparte">Napoléon Bonaparte</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p class="question__label">Quelle est la date de l'indépendance des États-Unis ?</p>
+                    <div class="question__choice">
+                        <input type="radio" id="4-juillet-1776" name="second-question" value="4 juillet 1776" checked>
+                        <label for="4-juillet-1776">4 juillet 1776</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="18-avril-1856" name="second-question" value="18 avril 1856">
+                        <label for="18-avril-1856">18 avril 1856</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="30-juin-1925" name="second-question" value="30 juin 1925">
+                        <label for="30-juin-1925">30 juin 1925</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p class="question__label">La chute de l'empire Romain se situe en ?</p>
+                    <div class="question__choice">
+                        <input type="radio" id="first-date" name="third-question" value="15 ap. J.-C." checked>
+                        <label for="first-date">15 ap. J.-C.</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="second-date" name="third-question" value="395 ap. J.-C.">
+                        <label for="second-date">395 ap. J.-C.</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="third-date" name="third-question" value="-740 av. J.-C.">
+                        <label for="third-date">-740 av. J.-C.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p class="question__label">Quelle est la capitale de la Slovénie ?</p>
+                    <div class="question__choice">
+                        <input type="radio" id="ljublna" name="fourth-question" value="Ljublna" checked>
+                        <label for="ljublna">Ljublna</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="belgrade" name="fourth-question" value="Belgrade">
+                        <label for="belgrade">Belgrade</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="bratislava" name="fourth-question" value="Bratislava">
+                        <label for="bratislava">Bratislava</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p class="question__label">Combien d'habitants compte l'Irlande en 2021 ?</p>
+                    <div class="question__choice">
+                        <input type="radio" id="first-number" name="fifth-question" value="1,365 Million" checked>
+                        <label for="first-number">1,365 Million</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="second-number" name="fifth-question" value="21 Millions">
+                        <label for="second-number">21 Millions</label>
+                    </div>
+                    <div class="question__choice">
+                        <input type="radio" id="third-number" name="fifth-question" value="5 millions">
+                        <label for="third-number">5 millions</label>
+                    </div>
+                </div>
+                <input class="submit-button" type="submit" value="Validez vos choix !">
+            </form>
+            <div class="quizz__result">
+                <p>Cliquez sur valider pour voir vos résultats</p>
+            </div>
+        </div>
+        <script src="./js/app.js"></script>
+    </body>
 </html>
