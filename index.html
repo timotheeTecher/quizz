@@ -10,86 +10,88 @@
     <body>
         <div class="quizz">
             <h1 class="quizz__title">Quizz Culture générale !</h1>
-            <form class="quizz__form" action="" method="post">
+            <form class="quizz__form" method="post">
                 <div class="question">
                     <p class="question__label">Qui est l'empereur de France le 2 décembre 1804 ?</p>
                     <div class="question__choice">
-                        <input type="radio" id="clovis" name="first-question" value="Clovis" checked>
+                        <input type="radio" id="clovis" name="q1" value="a" checked>
                         <label for="clovis">Clovis</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="abraham-lincoln" name="first-question" value="Abraham Lincoln">
+                        <input type="radio" id="abraham-lincoln" name="q1" value="b">
                         <label for="abraham-lincoln">Abraham Lincoln</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="napoleon-bonaparte" name="first-question" value="Napoléon Bonaparte">
+                        <input type="radio" id="napoleon-bonaparte" name="q1" value="c">
                         <label for="napoleon-bonaparte">Napoléon Bonaparte</label>
                     </div>
                 </div>
                 <div class="question">
                     <p class="question__label">Quelle est la date de l'indépendance des États-Unis ?</p>
                     <div class="question__choice">
-                        <input type="radio" id="4-juillet-1776" name="second-question" value="4 juillet 1776" checked>
-                        <label for="4-juillet-1776">4 juillet 1776</label>
+                        <input type="radio" id="date-1" name="q2" value="a" checked>
+                        <label for="date-1">4 juillet 1776</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="18-avril-1856" name="second-question" value="18 avril 1856">
-                        <label for="18-avril-1856">18 avril 1856</label>
+                        <input type="radio" id="date-2" name="q2" value="b">
+                        <label for="date-2">18 avril 1856</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="30-juin-1925" name="second-question" value="30 juin 1925">
-                        <label for="30-juin-1925">30 juin 1925</label>
+                        <input type="radio" id="date-3" name="q2" value="c">
+                        <label for="date-3">30 juin 1925</label>
                     </div>
                 </div>
                 <div class="question">
                     <p class="question__label">La chute de l'empire Romain se situe en ?</p>
                     <div class="question__choice">
-                        <input type="radio" id="first-date" name="third-question" value="15 ap. J.-C." checked>
-                        <label for="first-date">15 ap. J.-C.</label>
+                        <input type="radio" id="date-4" name="q3" value="a" checked>
+                        <label for="date-4">15 ap. J.-C.</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="second-date" name="third-question" value="395 ap. J.-C.">
-                        <label for="second-date">395 ap. J.-C.</label>
+                        <input type="radio" id="date-5" name="q3" value="b">
+                        <label for="date-5">395 ap. J.-C.</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="third-date" name="third-question" value="-740 av. J.-C.">
-                        <label for="third-date">-740 av. J.-C.</label>
+                        <input type="radio" id="date-6" name="q3" value="c">
+                        <label for="date-6">-740 av. J.-C.</label>
                     </div>
                 </div>
                 <div class="question">
                     <p class="question__label">Quelle est la capitale de la Slovénie ?</p>
                     <div class="question__choice">
-                        <input type="radio" id="ljublna" name="fourth-question" value="Ljublna" checked>
+                        <input type="radio" id="ljublna" name="q4" value="a" checked>
                         <label for="ljublna">Ljublna</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="belgrade" name="fourth-question" value="Belgrade">
+                        <input type="radio" id="belgrade" name="q4" value="b">
                         <label for="belgrade">Belgrade</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="bratislava" name="fourth-question" value="Bratislava">
+                        <input type="radio" id="bratislava" name="q4" value="c">
                         <label for="bratislava">Bratislava</label>
                     </div>
                 </div>
                 <div class="question">
                     <p class="question__label">Combien d'habitants compte l'Irlande en 2021 ?</p>
                     <div class="question__choice">
-                        <input type="radio" id="first-number" name="fifth-question" value="1,365 Million" checked>
-                        <label for="first-number">1,365 Million</label>
+                        <input type="radio" id="m1" name="q5" value="a" checked>
+                        <label for="m1">1,365 Million</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="second-number" name="fifth-question" value="21 Millions">
-                        <label for="second-number">21 Millions</label>
+                        <input type="radio" id="m2" name="q5" value="b">
+                        <label for="m2">21 Millions</label>
                     </div>
                     <div class="question__choice">
-                        <input type="radio" id="third-number" name="fifth-question" value="5 millions">
-                        <label for="third-number">5 millions</label>
+                        <input type="radio" id="m3" name="q5" value="c">
+                        <label for="m3">5 millions</label>
                     </div>
                 </div>
-                <input class="submit-button" type="submit" value="Validez vos choix !">
+                <button class="submit-button" type="submit">Validez vos choix !</button>
             </form>
             <div class="quizz__result">
-                <p>Cliquez sur valider pour voir vos résultats</p>
+                <p class="result-title">Cliquez sur valider pour voir vos résultats</p>
+                <p class="quizz__help"></p>
+                <p class="quizz__mark"></p>
             </div>
         </div>
         <script src="./js/app.js"></script>
